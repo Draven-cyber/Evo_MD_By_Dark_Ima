@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo MD TG Bot | Pair Device</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="gradient-bg"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Pairing Container -->
+    <div class="pairing-container">
+        <div class="pairing-card animate-pop-in">
+            <div class="card-header">
+                <a href="/" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <img src="images/logo.png" alt="Logo" class="card-logo">
+                <h1>Pair WhatsApp Device</h1>
+                <p>Connect your WhatsApp to start using Evo MD TG Bot</p>
+            </div>
+
+            <div class="card-body">
+                <!-- Step 1: Phone Number Input -->
+                <div id="step1" class="pairing-step active">
+                    <div class="step-indicator">
+                        <div class="step active">1</div>
+                        <div class="step">2</div>
+                        <div class="step">3</div>
+                    </div>
+                    
+                    <h2>Enter Your Phone Number</h2>
+                    <p class="step-description">We'll send a pairing code to your WhatsApp</p>
+                    
+                    <div class="input-group">
+                        <div class="country-code">
+                            <img src="https://flagcdn.com/w320/lk.png" alt="Sri Lanka" class="flag">
+                            <span>+94</span>
+                        </div>
+                        <input type="tel" id="phoneNumber" placeholder="71 234 5678" class="phone-input">
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Make sure your WhatsApp is open and connected to the internet</p>
+                    </div>
+                    
+                    <button id="requestPairing" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Request Pairing Code
+                    </button>
+                </div>
+
+                <!-- Step 2: Code Display -->
+                <div id="step2" class="pairing-step">
+                    <div class="step-indicator">
+                        <div class="step completed">✓</div>
+                        <div class="step active">2</div>
+                        <div class="step">3</div>
+                    </div>
+                    
+                    <h2>Your Pairing Code</h2>
+                    <p class="step-description">Enter this code in your WhatsApp linked devices</p>
+                    
+                    <div class="code-display">
+                        <div class="code-box">
+                            <span id="pairingCode">---- ----</span>
+                        </div>
+                        <button id="copyCode" class="btn-icon" title="Copy Code">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="how-to-box">
+                        <h3><i class="fas fa-mobile-alt"></i> How to enter code:</h3>
+                        <ol>
+                            <li>Open WhatsApp on your phone</li>
+                            <li>Go to <strong>Linked Devices</strong></li>
+                            <li>Tap on <strong>Link a Device</strong></li>
+                            <li>Enter the code above</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="timer-box">
+                        <i class="far fa-clock"></i>
+                        <span>Code expires in: <span id="timer">02:00</span></span>
+                    </div>
+                    
+                    <button id="cancelPairing" class="btn btn-outline btn-block">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                </div>
+
+                <!-- Step 3: Success -->
+                <div id="step3" class="pairing-step">
+                    <div class="step-indicator">
+                        <div class="step completed">✓</div>
+                        <div class="step completed">✓</div>
+                        <div class="step active">3</div>
+                    </div>
+                    
+                    <div class="success-animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    
+                    <h2>Successfully Paired!</h2>
+                    <p class="step-description">Your WhatsApp is now connected to Evo MD TG Bot</p>
+                    
+                    <div class="success-details">
+                        <p><i class="fas fa-phone"></i> <span id="pairedNumber"></span></p>
+                        <p><i class="fas fa-calendar"></i> <span id="pairingTime"></span></p>
+                    </div>
+                    
+                    <div class="whats-next">
+                        <h3>What's Next?</h3>
+                        <ul>
+                            <li><i class="fas fa-terminal"></i> Type <code>.menu</code> in WhatsApp</li>
+                            <li><i class="fas fa-download"></i> Try <code>.telegram Oppenheimer</code></li>
+                            <li><i class="fas fa-users"></i> Join our support group</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="/" class="btn btn-primary">
+                            <i class="fas fa-home"></i> Go Home
+                        </a>
+                        <a href="https://chat.whatsapp.com/BtCwNUpJ
