@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo MD TG Bot | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-bg"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Evo MD TG Bot Logo" class="logo-img">
+                    <span class="logo-text">Evo MD <span class="highlight">TG Bot</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/pair">Pair Device</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="/pair" class="btn btn-primary">
+                        <i class="fas fa-qrcode"></i> Get Started
+                    </a>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fade-in">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Evo MD TG Bot</span>
+                    </h1>
+                    <p class="hero-subtitle">Download any media from Telegram groups directly to WhatsApp with cloud backup on Mega.nz</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-download"></i>
+                            <span class="stat-number" id="total-downloads">0</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number" id="active-users">0</span>
+                            <span class="stat-label">Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-cloud"></i>
+                            <span class="stat-number" id="storage-used">0</span>
+                            <span class="stat-label">Storage</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="/pair" class="btn btn-primary btn-large">
+                            <i class="fas fa-mobile-alt"></i> Pair WhatsApp
+                        </a>
+                        <a href="#features" class="btn btn-outline btn-large">
+                            <i class="fas fa-play"></i> Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-slide-in">
+                    <div class="floating-card">
+                        <img src="images/bot-preview.png" alt="Bot Preview">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Amazing <span class="gradient-text">Features</span></h2>
+                <p class="section-subtitle">Everything you need in one powerful WhatsApp bot</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-telegram"></i>
+                    </div>
+                    <h3>Telegram Integration</h3>
+                    <p>Download any media from Telegram groups with just one command</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Mega.nz Backup</h3>
+                    <p>Automatic backup to Mega.nz cloud storage</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-youtube"></i>
+                    </div>
+                    <h3>YouTube Download</h3>
+                    <p>Download videos and audio from YouTube</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-instagram"></i>
+                    </div>
+                    <h3>Instagram Saver</h3>
+                    <p>Save Instagram posts, reels, and stories</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-tiktok"></i>
+                    </div>
+                    <h3>TikTok No Watermark</h3>
+                    <p>Download TikTok videos without watermark</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Session</h3>
+                    <p>Never lose your WhatsApp session with cloud sync</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                <p class="section-subtitle">Get started in just 3 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Pair Your WhatsApp</h3>
+                        <p>Click the "Pair Device" button and enter your phone number</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <i class="fas fa-key"></i>
+                        <h3>Enter Pairing Code</h3>
+                        <p>Enter the 8-digit code in your WhatsApp linked devices</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <i class="fas fa-download"></i>
+                        <h3>Start Downloading</h3>
+                        <p>Use commands like .telegram to download media</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Preview -->
+    <section class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular <span class="gradient-text">Commands</span></h2>
+                <p class="section-subtitle">Simple and intuitive commands</p>
+            </div>
+            <div class="commands-grid">
+                <div class="command-item">
+                    <code>.telegram Oppenheimer</code>
+                    <span>Download from Telegram</span>
+                </div>
+                <div class="command-item">
+                    <code>.yt Never Gonna Give Up</code>
+                    <span>YouTube video</span>
+                </div>
+                <div class="command-item">
+                    <code>.fb https://fb.com/video</code>
+                    <span>Facebook video</span>
+                </div>
+                <div class="command-item">
+                    <code>.ig https://ig.com/post</code>
+                    <span>Instagram post</span>
+                </div>
+                <div class="command-item">
+                    <code>.tiktok https://tiktok.com/...</code>
+                    <span>TikTok no watermark</span>
+                </div>
+                <div class="command-item">
+                    <code>.menu</code>
+                    <span>Show all commands</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About <span class="gradient-text">Rithika</span></h2>
+                    <p>Hi! I'm Rithika Imansara, the creator of Evo MD TG Bot. I'm passionate about creating innovative WhatsApp bots that make media downloading easy and accessible for everyone.</p>
+                    <p>With over 2 years of experience in bot development, I've created this bot to help users download media from various platforms directly through WhatsApp.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/rithika-profile.jpg" alt="Rithika" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of users already using Evo MD TG Bot</p>
+                <div class="cta-buttons">
+                    <a href="/pair" class="btn btn-primary btn-large">
+                        <i class="fas fa-qrcode"></i> Pair Now
+                    </a>
+                    <a href="https://chat.whatsapp.com/BtCwNUpJapkHYM5TQ81IGE" class="btn btn-outline btn-large">
+                        <i class="fab fa-whatsapp"></i> Join Support Group
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Evo MD TG Bot</span>
+                    </div>
+                    <p>Made with <i class="fas fa-heart" style="color: #ff69b4;"></i> by Rithika</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/pair">Pair Device</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://chat.whatsapp.com/BtCwNUpJapkHYM5TQ81IGE">Support Group</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Evo MD TG Bot. Created by Rithika Imansara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+              </html>
